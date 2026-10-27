@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-benne-cream text-benne-brown font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-benne-gold hover:bg-benne-gold-dark text-white font-medium px-6 py-2.5 rounded-md transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-benne-brown border border-benne-border font-medium px-6 py-2.5 rounded-md transition-colors duration-200;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2.5 border border-benne-border rounded-md bg-white text-benne-brown placeholder:text-benne-brown-muted/50 focus:outline-none focus:ring-2 focus:ring-benne-gold/20 focus:border-benne-gold transition-colors;
+  }
+  
+  .card {
+    @apply bg-white border border-benne-border rounded-lg p-6 shadow-sm;
+  }
+}

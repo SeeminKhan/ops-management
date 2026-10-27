@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+dist-ssr/
+*.local
+
+# Environment files (never commit sensitive data)
+.env
+.env.local
+.env.setup
+.env.setup.local
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sw?
+*.sublime-workspace
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Project-specific
+.supabase/
+coverage/
